@@ -46,15 +46,7 @@
 
 .first__btn {
     font-weight: 800;
-    font-size: 12px;
-    line-height: 14px;
-    /* identical to box height */
-    letter-spacing: 2.18182px;
-    padding: 33px 80px;
     background-color: var(--accent-color);
-    text-transform: uppercase;
-    border-radius: 8px;
-    color: var(--white-color);
     position: relative;
     z-index: 5;
 }
