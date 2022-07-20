@@ -5,9 +5,8 @@
     margin-top: 50px;
 }
 
-.swiper-slide {
+.slider-container .swiper-slide {
     position: relative;
-    background: #E3E3E3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     min-height: 550px;
@@ -22,7 +21,7 @@
     overflow: hidden;
 }
 
-.swiper-slide::after {
+.slider-container .swiper-slide::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -35,17 +34,17 @@
     transition: opacity 0.3s;
 }
 
-.swiper-slide-active {
+.slider-container .swiper-slide-active {
     transform: scaleX(1.16) scaleY(1.2);
     transition: transform 0.3s;
 }
 
-.swiper-slide-active::after {
+.slider-container .swiper-slide-active::after {
     opacity: 1;
     transition: opacity 0.3s;
 }
 
-.slide-title {
+.slider-container .slide-title {
     font-family: 'SFProDisplay';
     font-weight: 700;
     font-size: 30px;
