@@ -18,8 +18,20 @@
     padding-bottom: 178px;
 }
 
+.newsletter-content:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
 .newsletter__text {
     max-width: 370px;
+    z-index: 3;
 }
 
 .newsletter__title {
@@ -39,6 +51,7 @@
     position: absolute;
     bottom: -96px;
     right: var(--newsletter-gap);
+    z-index: 3;
 }
 
 .subscribe-form {
