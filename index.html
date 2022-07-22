@@ -250,10 +250,12 @@
                                 The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce Canyon National Park ranks as three of the most magnificent.
                             </p>
                         </div>
-                        <form action="" class="newsletter__form subscribe-form">
+                        <form action="#" class="newsletter__form subscribe-form">
+                            <input type="hidden" name="admin_email[]" value="gonnagetapower@gmail.com">
+                            <input type="hidden" name="form_subject" value="Заявка с сайта Mitravel">
                             <input type="text" name="name" placeholder="name" class="subscribe-form__field">
-                            <input type="email" name="email" placeholder="email" class="subscribe-form__field">
-                            <input type="tel" name="tel" placeholder="phone number" class="subscribe-form__field">
+                            <input type="email" name="email" placeholder="email" data-validate-field="email" class="subscribe-form__field">
+                            <input type="tel" name="tel" placeholder="phone number" data-validate-field="tel" class="subscribe-form__field">
                             <button class="btn btn-reset subscribe-form__btn">sign up now</button>
                         </form>
                     </div>
@@ -472,7 +474,9 @@
                 <div class="footer_colunm">
                     <h2 class="footer__title">Subscribe now</h2>
                     <form action="#" class="subs-form">
-                        <input type="email" name="email" class="subs-form__field" placeholder="Your email">
+                        <input type="hidden" name="admin_email[]" value="gonnagetapower@gmail.com">
+                        <input type="hidden" name="form_subject" value="Заявка с сайта Mitravel">
+                        <input type="email" name="email" class="subs-form__field" data-validate-field="email" placeholder="Your email">
                         <button class="btn-reset btn subs-form__btn">Subscribe now</button>
                     </form>
                 </div>
@@ -499,6 +503,8 @@
         </footer>
     </div>
     <script src="libs/swiper.min.js"></script>
+    <script src="libs/inputmask.min.js"></script>
+    <script src="libs/just-validate.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
